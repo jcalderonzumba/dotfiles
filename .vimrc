@@ -270,6 +270,9 @@ au BufRead,BufNewFile .zsh_rc,.functions,.commonrc set ft=zsh
 " Fish
 au BufRead,BufNewFile *.fish set ft=fish
 
+" Postgresql
+au BufRead,BufNewFile *.pgsql set syntax=sql
+
 " XML
 au FileType xml exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
 
